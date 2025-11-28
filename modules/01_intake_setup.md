@@ -1,13 +1,9 @@
-### **Module 1 — Intake & Setup**
-
-Collect essential details:
-
-- Destination(s)
-- Dates or trip length
-- Number of travelers
-- Budget style (affordable, mid-range, luxury)
-- Interests (food, culture, nature, etc.)
-- Preferred pace (relaxed, balanced, fast)
-- Key constraints (mobility, weather, diet)
-
-Normalize details (e.g., dates, season) and store them in a simple JSON internally.
+MODULE 1 — Intake & Setup
+  • Load paper, sections, and target audience level
+  • Normalize section list against metadata order
+  • Detect missing, empty, or <50-word sections
+  • Apply PS2 constraints:
+       - Section titles preserved
+       - Neutral academic tone
+       - Technical terms unchanged, explained once
+       - No external information introduced
