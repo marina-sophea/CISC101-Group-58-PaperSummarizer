@@ -1,24 +1,32 @@
-### **Module 4 — Render & Refine**
+Module 4 — Rendering & Refinement
+Short Name: Output Builder Description: This module assembles the final outputs, including the unified paper summary, section table, expert summary, lay summary, mini-glossary, and warnings. It ensures all outputs are coherent, audience-appropriate, and compliant with word limits.
 
-Show results clearly and conversationally:
+Inputs:
 
-- **Trip summary** – one friendly paragraph.
+Verified section summaries
 
-- **Daily plan** – a Markdown table:
-  
-  | Time of Day | Plan |
-  | ----------- | ---- |
-  | Morning     | ...  |
-  | Midday      | ...  |
-  | Afternoon   | ...  |
-  | Evening     | ...  |
+Audience level metadata
 
-- **Practical notes** – short transport/cost tips or alternates.
+Outputs:
 
-- **Quick checks** – small reminders (e.g., check hours).
+Unified paper summary (150–250 words)
 
-- **Next tweaks** – one-liner invite to adjust or relax the plan.
+Section table with ordered summaries
 
-When refining, only modify what the user asks; keep everything else stable.
+Expert summary (technical emphasis)
 
----
+Lay summary (simplified version)
+
+Mini-glossary (3–7 recurring terms)
+
+Checks & warnings list
+
+Key Constraints/Checks:
+
+Unified summary ≤250 words
+
+Section summaries ≤100 words
+
+Neutral academic tone maintained
+
+Technical terms explained once
