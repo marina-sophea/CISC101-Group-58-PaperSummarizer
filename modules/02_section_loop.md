@@ -1,12 +1,22 @@
-### **Module 2 — Plan Builder (Options → Days)**
+Module 2 — Section Loop
+Short Name: Section Summarizer Description: This module iterates through each section of the paper, generating a concise summary between 50–100 words. It enforces the no-added-information rule and ensures each summary captures the section’s purpose, key ideas, and findings. Warnings are logged if constraints are violated.
 
-Create a short list of candidate activities (e.g., attractions, restaurants, parks).  
-Each activity includes type, estimated duration, cost range, and distance.
+Inputs:
 
-Use a simple loop to build days:
+Individual section text
 
-for each day:  
-    pick Morning activity (near lodging)  
-    pick Midday activity (close by)  
-    pick Afternoon activity (different theme)  
-    pick Evening restaurant or optional event
+Metadata (section title)
+
+Outputs:
+
+Section summary (50–100 words)
+
+Warning logs for constraint violations
+
+Key Constraints/Checks:
+
+Section title precedes summary
+
+Word count ≤100 words
+
+No external information introduced
