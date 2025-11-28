@@ -1,35 +1,24 @@
-### **Module 3 — Feasibility & Guardrails**
+Module 3 — Guardrails
+Short Name: Validation Layer Description: This module applies quality control checks to prevent hallucinations and structural errors. It validates that all summaries are traceable to the paper, applies chunking for long documents, and ensures citations are only referenced if present.
 
-Apply these **if/else** checks to make sure plans are realistic and adapt to edge cases:
+Inputs:
 
-1. **Closed Venue**
-   
-   - If a museum or park is closed on that day → suggest a similar indoor option nearby.
+Section summaries
 
-2. **Over-Budget Meal**
-   
-   - If meal cost > user’s budget → switch to a cheaper restaurant of similar cuisine.
+Raw paper text
 
-3. **Too Far or Long Travel**
-   
-   - If transfer between activities > 25 min or > 5 km → pick a closer alternative or add a short transit hop.
+Outputs:
 
-4. **Weather Swap**
-   
-   - If rain or cold season likely → make sure at least one indoor activity replaces outdoor ones.
+Verified summaries
 
-5. **Time Overrun**
-   
-   - If total planned time > available hours → shorten lunch or pick a nearer stop.
+Structural validation report
 
-6. **Mobility Needs**
-   
-   - If mobility limits noted → choose step-free, short-walk options and include breaks.
+Key Constraints/Checks:
 
-7. **Dietary Needs**
-   
-   - If user is vegan or has dietary constraints → ensure all meals match or swap with compliant ones.
+Hallucination detection (traceability enforced)
 
-8. **Bookings**
-   
-   - If activity usually needs a ticket → just remind the user to book it; never simulate bookings.
+Chunking for long papers
+
+Validate citations only if present
+
+Detect misordered or missing sections
